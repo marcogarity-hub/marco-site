@@ -1,0 +1,126 @@
+# Everything on the site lives in this file.
+#
+# To update: edit this file, commit, and push. Vercel rebuilds in about a minute.
+# Or open Claude Code in this folder and say what changed ("add the hackathon
+# result to Now and make it a Work entry").
+#
+# If an edit breaks something (a missing field, a typo in a URL, an em dash),
+# the build fails with a message naming the line to fix, and the last good
+# version of the site stays live.
+#
+# House rules, enforced by the build:
+#   - No em dashes. Use commas, colons, or a new sentence.
+#   - No phone number anywhere on the site.
+#   - Mosaic: no target company names, no countries tied to targets, no thesis numbers.
+#   - MIV client: always "Detroit fintech startup."
+
+profile:
+  name: Marco Garity
+  headline: Economics student at the University of Michigan, minoring in Human-Centered AI.
+  bio:
+    - I source software companies for Mosaic Holdings, research startup markets with Michigan Innovation Ventures, and build tools with AI to make that work faster. I'm most interested in how companies adopt AI in practice, and in the investing side of tech.
+    - I grew up in Newton, Massachusetts, and have caddied at Brae Burn Country Club since 2022. Away from work I lift, play golf and basketball, climb, cook, backpack, and follow the Celtics and Michigan sports.
+  location: Ann Arbor, Michigan
+  email: mgarity@umich.edu
+  links:
+    - label: LinkedIn
+      href: https://www.linkedin.com/in/marco-garity-24b064367
+    - label: GitHub
+      href: https://github.com/marcogarity-hub
+  # To add a resume download, put a PDF WITHOUT your phone number in /public
+  # and uncomment the next line.
+  # resume: /Marco_Garity_Resume.pdf
+
+# What you're working on right now. Newest first.
+# Keep 3 to 6 entries. When something finishes, either delete it or
+# promote it to a Work entry below.
+now:
+  - when: Nov 2026
+    text: Preparing for the hackathon at the University Blockchain Conference.
+  - when: Oct 2026
+    text: Scoping an AI agent that paper-trades major cryptocurrencies, with a testable hypothesis behind each strategy. The build is planned for winter break.
+  - when: Sep 2026
+    text: Started as an analyst intern at Mosaic Holdings, sourcing software companies in manufacturing execution and shop floor markets.
+  - when: Sep 2026
+    text: Joined Michigan Innovation Ventures as an analyst, starting with competitor research for a Detroit fintech startup.
+  - when: Summer 2026
+    text: Selected as 1 of 5 students from 10 universities for Timeline VC's summer program, and named 1 of 2 All-Stars at its final showcase for my wellness app.
+
+# Finished or in-use projects. Status is one of: Live, In use, In progress, Archived.
+# link is optional. image is optional (put the file in /public, e.g. /wellness.png).
+work:
+  - title: Personal Scheduling and Wellness App
+    when: 2026 – Present
+    status: Live
+    # link: https://your-app-url.vercel.app
+    summary:
+      - A web app for journaling, goal setting, and workout and recovery tracking, with smart-ring data pulled in. Its voice-to-calendar flow turns a spoken request into a drafted Google Calendar event, and nothing saves until I confirm it.
+      - I designed, built, and shipped it with Claude Code, owning the product scope, data model, and deployment decisions. It runs on Supabase and Vercel as an installable phone app, and I pitched it at Timeline VC's final showcase, where it earned 1 of 2 All-Star spots in the cohort.
+    builtWith: [Claude Code, React, Supabase, Vercel, Google Calendar API]
+
+  - title: AI-assisted lead sourcing at Mosaic
+    when: Sep 2026 – Present
+    status: In use
+    summary:
+      - At Mosaic I source software companies in highly regulated manufacturing markets. I paired Grata's AI Similars search with a Claude skill I built that scrapes each company's site and the web to pre-check it against the investment thesis before it reaches the target list. Final fit calls stay manual.
+      - "In one comparison, it surfaced 6 qualified companies in 2 hours, versus 6 in 5 hours the day before: about 60% less time per lead and 2.5x the sourcing rate."
+    builtWith: [Claude, Grata, Salesforce]
+
+experience:
+  - org: Mosaic Holdings
+    role: Analyst Intern
+    location: San Francisco, CA (Remote)
+    when: Sep 2026 – Present
+    bullets:
+      - Enriched 100 Salesforce accounts weekly (500+ total) via Grata, LinkedIn, and Apollo.io with contacts, market classification, headcount, founding year, funding, and ARR, flagging targets whose funding or ARR exceeded Mosaic's thesis
+      - Screened 1,000+ software leads in highly regulated manufacturing execution (MES) and shop floor/ERP markets with high gross and net dollar retention, advancing 40 (~4%) that met Mosaic's thesis to a target list feeding an automated outreach pipeline
+
+  - org: Michigan Innovation Ventures
+    role: Analyst
+    location: Ann Arbor, MI
+    when: Sep 2026 – Present
+    bullets:
+      - Researched 8 of the team's 15 competitors to a Detroit fintech startup's accounting software on product, funding, and market size, grading each 1–5 on customer overlap, product overlap, momentum, threat or partner potential, and data availability
+      - Sized the market and analyzed competitor funding for the client's midpoint review, showing vertical-specific accounting tools raised $250M+ in the past 12 months while general-purpose tools raised nothing since before 2023
+      - Presented a nuclear fusion market update to 40+ MIV members on the sector's venture funding behind Commonwealth Fusion Systems, then ran a debate on whether investors should back startups yet to reach net energy gain
+
+  - org: Brae Burn Country Club
+    role: Golf Caddie and Honorary Francis Ouimet Scholar
+    location: Newton, MA
+    when: 2022 – Present
+    bullets:
+      - Advanced to A-level caddie over five consecutive seasons, serving 200+ members and guests across 120+ rounds, including multi-day tournaments
+      - Mentored 5+ younger caddies when paired in the same group, coaching them in real time on reading yardages and greens, course management, and member interaction, helping them earn promotions
+      - Selected as an Honorary Francis Ouimet Scholar in 2025 and 2026 for academic merit, character, and caddie service, renewed each year on grades and new essays
+
+  - org: Junior Achievement of Greater Boston
+    role: Co-Founder, Harmony and Belle Vie (JA Company Program)
+    location: Boston, MA
+    when: 2021 – 2025
+    bullets:
+      - Co-founded and ran 2 student companies through the JA Company Program, securing $920 in JA seed funding and tracking each company's P&L through marketing, production, distribution, and liquidation
+      - "Harmony (CTO): designed packaging and a QR code tag linking to a curated playlist, built an online sales channel that drove 26% of sales, and ran distribution across pop-ups and school, generating $900 in revenue and a 43% investor return"
+      - "Belle Vie (Chief of Supply Chain and Distribution): sourced 85 pens and made silicone grips in-house with 3D-printed molds, selling out the first batch within 4 weeks and a second weeks later, for 32 orders, $345 in revenue, and a 49% net margin"
+
+education:
+  - school: University of Michigan
+    location: Ann Arbor, MI
+    degree: Bachelor of Arts in Economics, Minor in Human-Centered Artificial Intelligence
+    when: Aug 2025 – May 2029
+    details:
+      - "GPA: 3.72/4.00"
+      - "Campus involvement: Michigan Innovation Ventures, Michigan Blockchain, Michigan Economics Society, Phi Gamma Delta"
+
+skills:
+  - label: Technical
+    items: [Python, R, Salesforce, Supabase, Vercel, Claude Code, Codex]
+  - label: Business
+    items: [Market sizing, Competitor analysis, Case analysis, Financial statements, Break-even analysis, Budgeting, Fundraising]
+  - label: Certifications
+    items:
+      - Accenture UK Strategy Consulting Job Simulation (Forage, 2025)
+  - label: Awards
+    items:
+      - Timeline VC All-Star (1 of 2 in cohort, 2026)
+      - DECA International Qualifier (2025)
+      - DECA Achievement Award (2025)
