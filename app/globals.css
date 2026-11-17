@@ -279,39 +279,22 @@ h3 {
   margin-top: 1rem;
 }
 
+/* The newest Now entry gets a thick maize underline, heavier than links. */
 mark {
   color: inherit;
-  background: linear-gradient(var(--hl), var(--hl)) no-repeat 0 88% / 100% 0.62em;
-  padding: 0 0.08em;
+  background: linear-gradient(var(--maize), var(--maize)) no-repeat 0 100% / 100% 0.18em;
+  padding-bottom: 0.06em;
   -webkit-box-decoration-break: clone;
   box-decoration-break: clone;
   animation: mark 900ms cubic-bezier(0.2, 0.7, 0.2, 1) 350ms both;
 }
 
-/* On navy, a translucent marker turns olive, so dark mode uses a solid one. */
-[data-theme="dark"] mark {
-  color: #0c1b33;
-  background-image: linear-gradient(var(--maize), var(--maize));
-  background-position: 0 50%;
-  background-size: 100% 100%;
-  animation-name: mark-full;
-}
-
-@keyframes mark-full {
-  from {
-    background-size: 0% 100%;
-  }
-  to {
-    background-size: 100% 100%;
-  }
-}
-
 @keyframes mark {
   from {
-    background-size: 0% 0.62em;
+    background-size: 0% 0.18em;
   }
   to {
-    background-size: 100% 0.62em;
+    background-size: 100% 0.18em;
   }
 }
 
